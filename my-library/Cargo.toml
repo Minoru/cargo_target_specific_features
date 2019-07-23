@@ -1,0 +1,10 @@
+[package]
+name = "my-library"
+version = "0.0.1"
+authors = ["Alexander Batischev <eual.jp@gmail.com>"]
+
+[target.'cfg(target_os = "macos")'.dependencies]
+gettext-without-system = { path = "../gettext-without-system" }
+
+[target.'cfg(not(target_os = "macos"))'.dependencies]
+gettext-with-system = { path = "../gettext-with-system" }

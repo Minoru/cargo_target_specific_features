@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "my-library",
+    "gettext-without-system",
+    "gettext-with-system",
+]

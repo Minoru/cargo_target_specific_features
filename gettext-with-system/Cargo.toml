@@ -1,0 +1,11 @@
+[package]
+name = "gettext-with-system"
+version = "0.0.1"
+authors = ["Alexander Batischev <eual.jp@gmail.com>"]
+
+[dependencies]
+gettext-rs = "^0.4"
+
+[dependencies.gettext-sys]
+version = "^0.19.8"
+features = [ "gettext-system" ]
